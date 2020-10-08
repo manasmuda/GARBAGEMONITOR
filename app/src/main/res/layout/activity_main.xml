@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscreenlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/loginpagerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/idedit"
+            android:hint="ENTER ID"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/getbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:textColor="@color/colorPrimary"
+            android:text="GET DATA"/>
+
+        <co.ceryle.segmentedbutton.SegmentedButtonGroup
+            android:elevation="5dp"
+            android:translationY="25dp"
+            android:id="@+id/pager_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:sbg_borderColor="#ffffff"
+            app:sbg_borderSize="1dp"
+            app:sbg_dividerColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:sbg_selectorColor="@color/colorPrimary"
+            app:sbg_backgroundColor="#ffffff"
+            app:sbg_radius="30dp"
+            app:sbg_position="0">
+            <co.ceryle.segmentedbutton.SegmentedButton
+                android:id="@+id/user_sb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:sb_textColor="@color/colorPrimary"
+                app:sb_textColor_onSelection="#ffffff"
+                app:sb_text="CURRENT" />
+            <co.ceryle.segmentedbutton.SegmentedButton
+                android:id="@+id/dept_sb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:sb_textColor="@color/colorPrimary"
+                app:sb_textColor_onSelection="#ffffff"
+                app:sb_text="HISTORY"/>
+        </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/pager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curved_linear"
+            android:padding="5dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

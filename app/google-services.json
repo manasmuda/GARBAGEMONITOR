@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "475827427837",
+    "firebase_url": "https://garbage-monitoring-syste-f1f56.firebaseio.com",
+    "project_id": "garbage-monitoring-syste-f1f56",
+    "storage_bucket": "garbage-monitoring-syste-f1f56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475827427837:android:e9c1e7f3a048d987eee194",
+        "android_client_info": {
+          "package_name": "com.example.garbagemonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475827427837-fjsbigh2de4v2preakaejphpdrv3s1fo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.garbagemonitor",
+            "certificate_hash": "680c338dd9c2dc81f0facd1ada09d56d941591fb"
+          }
+        },
+        {
+          "client_id": "475827427837-bhhmckkqkm25njrv0q92aqihgt37ukco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnSlKveNuAqj28GO8sP_2whoDB6iend8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475827427837-bhhmckkqkm25njrv0q92aqihgt37ukco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
